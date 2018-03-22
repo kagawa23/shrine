@@ -1,0 +1,88 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": "airbnb",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "react/jsx-uses-vars": 2,
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "indent": [
+            2,
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "react/jsx-indent": [
+            2,
+            4
+        ],
+        "react/jsx-indent-props": [
+            2,
+            4
+        ],
+        "prefer-const": 0,
+        "no-param-reassign": [
+            2,
+            {
+                "props": false
+            }
+        ],
+        "no-underscore-dangle": [
+            2,
+            {
+                "allowAfterThis": true,
+                "allowAfterSuper": true
+            }
+        ],
+        "no-plusplus": "off",
+        "no-bitwise": "off",
+        "react/jsx-closing-bracket-location": [
+            2,
+            "after-props"
+        ],
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "jsx-a11y/click-events-have-key-events": "off"
+    },
+    "overrides": [
+        {
+            "files": [
+                "src/container/*.js"
+            ],
+            "rules": {
+                "react/prop-types": false
+            }
+        }
+    ]
+}
